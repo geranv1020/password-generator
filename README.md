@@ -9,6 +9,7 @@ A website that generates a random password for you.
 * JAVASCRIPT
 
 ## Website 
+https://geranv1020.github.io/password-generator/
 
 ## Picture
 ![Image](./develop/images/password-site.png)
