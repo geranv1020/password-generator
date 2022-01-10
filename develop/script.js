@@ -1,19 +1,10 @@
-const resultEl = document.getElementById('result');
-const lengthEl = document.getElementById('length');
-const uppercaseEl = document.getElementById('uppercase');
-const lowercaseEl = document.getElementById('lowercase');
-const numbersEl = document.getElementById('numbers');
-const symbolsEl = document.getElementById('symbols');
-const generateEl = document.getElementById('generate');
-const clipboardEl = document.getElementById('clipboard');
+// Constants 
+const upperCaseStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const lowerCaseStr = "abcdefghijklmnopqrstuvwxyz";
+const numberStr = "0123456789";
+const specialCharactersStr = "!@#$%^&*()=<>,.";
 
 // Assignment code here
-const randomFunc = {
-    lower: getRandomLower,
-    upper: getRandomUpper,
-    number: getRandomNumber,
-    symbol: getRandomSymbol
-};
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
@@ -30,20 +21,8 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
- function getRandomLower() {
-     return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
- }
-
- function getRandomUpper() {
-     return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
- }
-
- function getRandomNumber() {
-    return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
+function generatePassword() {
+    var promptPassLength = window.prompt('Your password needs to be between 8 and 128 characters. Write the number of characters you desire for your password.')
 }
 
-function getRandomSymbol() {
-    const symbols = "!@#$%^&*()=<>/,.";
-    return symbols[Math.floor(Math.random() * symbols.length)];
-}
 
