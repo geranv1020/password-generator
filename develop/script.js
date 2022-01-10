@@ -22,7 +22,18 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 function generatePassword() {
-    var promptPassLength = window.prompt('Your password needs to be between 8 and 128 characters. Write the number of characters you desire for your password.')
+    var promptPassLength = window.prompt('Your password needs to be between 8 and 128 characters. Write the number of characters you desire for your password.');
 }
+var upperCasePassword = window.prompt('Do you want your password to contain any upercase letters? Enter "yes" or "no".');
+
+var lowerCasePassword = window.prompt('Do you want your password to contain any lowercase letters? Enter "yes" or "no".');
+
+var numberPassword = window.prompt('Do you want your password to contain any numbers?');
+
+var symbolsPassword = window.prompt('Do you want your password to contain any symbols? Enter "yes" or "no".');
 
 
+for (var i = 0; i <= passwordLength; i++) {
+    var randomNumber = Math.floor(Math.random() * chars.length);
+    password += chars.substring(randomNumber, random +1);
+}
